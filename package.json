@@ -1,0 +1,28 @@
+{
+  "name": "bcrypt",
+  "version": "1.0.0",
+  "description": "bcrypt and bcryptjs hashing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harshit pandey (harshitpandey678@gmail.com)",
+  "license": "ISC",
+  "dependencies":{
+  	"bcryptjs" : "*",
+    "bcrypt" : "*",
+  	"body-parser" : "*",
+  	"connect-flash" : "*",
+  	"cookie-parser" : "^1.4.1",
+  	"express" : "*",
+  	"express-handlebars" : "*",
+  	"express-messages" : "*",
+    "express-session" : "*",
+  	"express-validator" : "*",
+    "passport" : "*",
+    "mongodb" : "*",
+    "mongoose" : "*",
+    "passport-http" : "*",
+    "passport-local" : "*"
+  }
+}

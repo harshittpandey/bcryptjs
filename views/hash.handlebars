@@ -1,0 +1,38 @@
+<div >
+.
+<div class="container-1 w3-round-xlarge" style="margin-top: 5%">
+<br>
+<h2 class="w3-center heading w3-wide" >Enter Password you want to Hash</h2>
+<br>
+{{#if errors}}
+     {{#each errors}}
+        <div class="w3-panel w3-card-4 w3-red w3-display-container w3-round-large" style="width: 400px;margin-left: 3%">
+           <span onclick="this.parentElement.style.display='none'" class="w3-button w3-round-large w3-red w3-medium w3-display-topright">&times;</span>
+           <p class="w3-medium">{{msg}}</p>
+        </div>
+     {{/each}}
+{{/if}}
+<div style="margin-left: 13%">
+  <form method="post" action="/hash/hash">
+	  <div class="w3-container ">
+		  <input class="w3-input w3-border w3-round-xlarge" style="width: 550px" name="password" placeholder="Password">
+	  </div>
+	  <div class=" w3-margin-top" style="margin-left: 35%"><button type="submit" class=" w3-padding-large w3-grey w3-btn">Submit</button></div>
+  </form>
+</div>
+
+<hr style="margin-left: 5%;margin-right: 5%;">
+<hr style="margin-left: 5%;margin-right: 5%;">
+<h2 class="w3-center heading w3-wide" >Hashed Password</h2>
+
+<div style="margin-left: 10%">
+    <div class="w3-container w3-center w3-margin-top w3-grey w3-round-xlarge w3-padding-large w3-margin-left w3-margin-right w3-borderw3-round-large" id="show" style="width: 650px">
+	     {{salt}}
+       <br>
+       {{hash}}
+    </div>
+</div>
+<br>
+<br>
+</div>
+</div>
